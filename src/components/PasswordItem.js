@@ -6,7 +6,7 @@ const PasswordItem = ({ password, onDelete }) => {
       <span>
         <strong>{password.appName}</strong> | <em>{password.login}</em> | {password.password}
       </span>
-      <button onClick={onDelete} style={{ marginLeft: '1rem' }}>Delete</button>
+      <button onClick={onDelete} className="btn btn-delete">Delete</button>
     </li>
   );
 };

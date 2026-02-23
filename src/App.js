@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import PasswordForm from './components/PasswordForm';
 import PasswordList from './components/PasswordList';
+import './components/PasswordManager.css';
 
 function App() {
   const [passwords, setPasswords] = useState(() => {
@@ -23,9 +24,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Password Manager</h1>
-      <PasswordForm onAdd={addPassword} />
-      <PasswordList passwords={passwords} onDelete={deletePassword} />
+      <div className="container">
+        <h1>Password Manager</h1>
+        <PasswordForm onAdd={addPassword} />
+        <PasswordList passwords={passwords} onDelete={deletePassword} />
+      </div>
     </div>
   );
 }
