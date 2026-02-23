@@ -15,7 +15,7 @@ const PasswordForm = ({ onAdd }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: '1rem' }}>
+    <form onSubmit={handleSubmit} className="password-form">
       <input
         type="text"
         placeholder="Application"
@@ -37,7 +37,7 @@ const PasswordForm = ({ onAdd }) => {
         onChange={(e) => setPassword(e.target.value)}
         required
       />
-      <button type="submit">Add</button>
+      <button type="submit" className="btn">Add</button>
     </form>
   );
 };

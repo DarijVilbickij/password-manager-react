@@ -3,7 +3,7 @@ import PasswordItem from './PasswordItem';
 
 const PasswordList = ({ passwords, onDelete }) => {
   return (
-    <ul style={{ listStyle: 'none', padding: 0 }}>
+    <ul className="password-list">
       {passwords.map((password, index) => (
         <PasswordItem key={index} password={password} onDelete={() => onDelete(index)} />
       ))}
